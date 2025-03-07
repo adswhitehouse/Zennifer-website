@@ -55,4 +55,46 @@ select {
 /* Body */
 body {
   font-family: "Golos Text", sans-serif;
+  background: linear-gradient(to bottom, #fbf6f6, #eac4d5, #c6d8f3);
+}
+
+/* Header */
+header {
+  padding-inline: 10vw;
+  border-bottom: 2px solid #171717;
+  position: fixed;
+  width: 100%;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+}
+
+header nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #171717;
+  font-weight: 500;
+}
+
+.get-started {
+  width: 11rem;
+  height: 3rem;
+  background-color: #171717;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10rem;
+  color: #fefefe;
+  gap: 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 1.5rem;
 }
