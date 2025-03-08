@@ -154,58 +154,37 @@ header nav ul li a {
 .free {
   position: absolute;
   overflow: hidden;
-  animation: free 6s linear infinite;
+  animation: free 4s linear infinite;
 }
 
 .lancer {
   position: absolute;
   overflow: hidden;
-  animation: lancer 6s linear infinite;
+  animation: lancer 4s linear infinite;
 }
 
+/* H1 Animations */
 @keyframes free {
-  0% {
-    width: 60%;
-  }
-
-  25% {
+  0%,
+  30%,
+  70%,
+  100% {
     width: 60%;
   }
 
   50% {
     width: 0%;
-  }
-
-  75% {
-    width: 60%;
-  }
-
-  100% {
-    width: 60%;
   }
 }
 
 @keyframes lancer {
-  0% {
-    width: 100%;
-  }
-
-  25% {
-    width: 0%;
-  }
-
-  50% {
-    width: 0;
-  }
-
-  75% {
-    width: 0%;
-  }
-
+  0%,
   100% {
     width: 100%;
   }
-  
+
+  30%,
+  70% {
+    width: 0%;
+  }
 }
-
-
