@@ -114,7 +114,6 @@ header button {
   height: 100vh;
   width: 100vw;
   padding-inline: 10vw;
-  /* padding-top: 25vh; */
 }
 
 .hero-links {
@@ -156,12 +155,20 @@ header button {
   justify-content: center;
 }
 
+.hero-img {
+  position: absolute;
+  bottom: 0;
+  right: 1vw;
+  width: 30rem;
+  z-index: -1;
+}
+
 .hero h1 {
   font-size: 11rem;
   text-transform: uppercase;
   line-height: 0.8;
   position: relative;
-  padding-top: 15rem;
+  padding-top: 30vh;
 }
 
 .free {
@@ -176,21 +183,13 @@ header button {
   animation: lancer 4s linear infinite;
 }
 
-.hero-img {
-  position: absolute;
-  bottom: 0;
-  right: 5vw;
-  width: 30rem;
-  z-index: -1;
-}
-
 /* H1 Animations */
 @keyframes free {
   0%,
   30%,
   70%,
   100% {
-    width: 60%;
+    width: 4ch;
   }
 
   50% {
@@ -201,7 +200,7 @@ header button {
 @keyframes lancer {
   0%,
   100% {
-    width: 100%;
+    width: 7ch;
   }
 
   30%,
@@ -236,6 +235,25 @@ header button {
   header nav ul li a {
     color: #fefefe;
   }
+
+  /* Hero */
+  .hero h1 {
+    font-size: 4rem;
+    padding-top: 55vh;
+  }
+
+  .hero-links {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .know-more {
+    margin-left: 0;
+  }
+
 }
 
 .show-nav {
