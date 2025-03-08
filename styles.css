@@ -101,11 +101,12 @@ header nav ul li a {
 .hero {
   height: 100vh;
   width: 100vw;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   padding-inline: 10vw;
-  gap: 2rem;
+  padding-top: 25vh;
+}
+
+.hero-links {
+  margin-block: 10rem 1rem;
 }
 
 .know-more {
@@ -147,4 +148,64 @@ header nav ul li a {
   font-size: 11rem;
   text-transform: uppercase;
   line-height: 0.8;
+  position: relative;
 }
+
+.free {
+  position: absolute;
+  overflow: hidden;
+  animation: free 6s linear infinite;
+}
+
+.lancer {
+  position: absolute;
+  overflow: hidden;
+  animation: lancer 6s linear infinite;
+}
+
+@keyframes free {
+  0% {
+    width: 60%;
+  }
+
+  25% {
+    width: 60%;
+  }
+
+  50% {
+    width: 0%;
+  }
+
+  75% {
+    width: 60%;
+  }
+
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes lancer {
+  0% {
+    width: 100%;
+  }
+
+  25% {
+    width: 0%;
+  }
+
+  50% {
+    width: 0;
+  }
+
+  75% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+  
+}
+
+
