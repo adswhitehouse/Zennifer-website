@@ -63,7 +63,7 @@ header {
   padding-inline: 10vw;
   border-bottom: 2px solid #171717;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 10;
 }
 
@@ -237,6 +237,18 @@ header button {
   }
 
   /* Hero */
+  .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0)
+    );
+    z-index: -1;
+  }
+
   .hero h1 {
     font-size: 4rem;
     padding-top: 55vh;
@@ -253,7 +265,6 @@ header button {
   .know-more {
     margin-left: 0;
   }
-
 }
 
 .show-nav {
